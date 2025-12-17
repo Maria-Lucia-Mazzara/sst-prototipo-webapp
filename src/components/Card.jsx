@@ -6,6 +6,7 @@ export default function Card({
     start_date,
     end_date,
     description,
+    path
 }) {
     return (
         <>

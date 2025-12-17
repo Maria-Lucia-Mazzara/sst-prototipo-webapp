@@ -1,9 +1,8 @@
 
-function Footer() {
+export default function Footer() {
     return (
         <footer>
             <p>© 2025 - My Travel App</p>
         </footer>
     );
 }
-export default Footer

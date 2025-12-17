@@ -1,5 +1,8 @@
 
-function DetailTravel() {
-    return <></>
+export default function DetailTravel() {
+    return (
+        <>
+            <h1>detail travel</h1>
+        </>
+    )
 }
-export default DetailTravel

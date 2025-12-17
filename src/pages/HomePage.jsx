@@ -1,7 +1,7 @@
 import travels from "../data/travels";
 import Card from "../components/Card";
 
-function HomePage() {
+export default function HomePage() {
     // Array of travels
     <travels />;
 
@@ -24,4 +24,3 @@ function HomePage() {
         </>
     );
 }
-export default HomePage
