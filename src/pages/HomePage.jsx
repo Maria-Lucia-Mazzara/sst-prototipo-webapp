@@ -2,10 +2,11 @@ import TravelCard from "../components/TravelCard";
 import TravelForm from "../components/TravelForm";
 import { useTravels } from "../contexts/TravelsContext";
 
+
 export default function HomePage() {
     // const [travelsArray, setTravelsArray] = useState(travels);
 
-    const { list } = useTravels();
+    const { list } = useTravels()
 
     return (
         <div className="container">

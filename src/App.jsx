@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DefaultLayout from "./layouts/DefaultLayout";
-import HomePage from "./pages/HomePage";
 import DetailTravel from "./pages/DetailTravel";
+import HomePage from "./pages/Homepage";
+import { TravelsProvider } from "./contexts/TravelsContext";
 
 function App() {
   return (
-    <>
+    <TravelsProvider>
       <BrowserRouter>
         <Routes>
           <Route element={<DefaultLayout />}>
@@ -14,8 +15,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
-  )
+    </TravelsProvider>
+  );
 }
 
 export default App;
